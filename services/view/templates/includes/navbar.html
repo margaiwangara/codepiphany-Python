@@ -1,0 +1,109 @@
+<style>
+    .login-container {
+        position: relative;
+        height: 100%;
+        margin: auto;
+        width: 300px;
+    }
+    .navbar-brand
+    {
+        display: flex;
+        align-items: center;
+    }
+     .navbar-brand>img
+    {
+        padding: 7px 13px;
+    }
+    .navbar-brand
+    {
+        font-size: 25px;
+        font-weight: bolder;
+        color: #0e304d
+    }
+</style>
+<nav class="navbar navbar-default topbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <!--<div class="toggler">
+                <a href="#"><i class="fa fa-bars"></i></a>
+            </div>-->
+            <a class="navbar-brand" href="#">
+                <img src="{{ url_for('static',filename='images/my-logo.jpg') }}" class="img-circle img-responsive" width="70" height="70" alt="logo"> codepiphany
+            </a>
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                
+            </button>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-log-in"></span> Log In
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#">
+                            <div class="login-container">
+                                <div class="text-center">
+                                    <h3><strong>Access you account</strong></h3>
+                                </div>
+                                <hr>
+                                <form action="" method="post">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="glyphicon glyphicon-user"></i>
+                                            </span>
+                                            <input type="text" name="username_login" placeholder="Username" id="username-login" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="glyphicon glyphicon-lock"></i>
+                                            </span>
+                                            <input type="password" name="password_login" placeholder="Password" id="password-login" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-primary form-control" type="submit" name="submit_login" id="submit-login">
+                                            Log In
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="glyphicon glyphicon-user"></span> Register
+                </a>
+            </li>
+        </ul>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Videos</a></li>
+            </ul>
+        </div>
+        
+    </div>
+</nav>
+<!--
+<aside id="sidebar">
+    <div class="sidebar-user">
+
+    </div>
+    <div class="sidebar-links">
+        <ul class="links">
+            <li><a href="#">item-1</a></li>
+            <li><a href="#">item-2</a></li>
+            <li><a href="#">item-3</a></li>
+        </ul>
+    </div>
+</aside>
+-->
